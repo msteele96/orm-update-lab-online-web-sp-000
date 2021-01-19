@@ -48,7 +48,10 @@ class Student
   end
 
   def self.new_from_db
-
+    from_db = self.new
+    from_db.id = [0]
+    from_db.name = [1]
+    from_db.grade = [2]
   end
 
   def self.find_by_name
