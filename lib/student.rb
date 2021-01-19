@@ -54,7 +54,7 @@ class Student
     self.new(name, grade, id)
   end
 
-  def self.find_by_name(name)
+  def self.find_by_name
     sql = <<-SQL
       SELECT * FROM students WHERE name = ? LIMIT 1
     SQL
