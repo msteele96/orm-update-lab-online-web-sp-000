@@ -52,6 +52,8 @@ class Student
     from_db.id = [0]
     from_db.name = [1]
     from_db.grade = [2]
+    from_db.save
+    from_db
   end
 
   def self.find_by_name
