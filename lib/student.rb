@@ -48,11 +48,8 @@ class Student
   end
 
   def self.new_from_db(row)
-    from_db = self.new
+    from_db = self.new(row[1],row[2])
     from_db.id = row[0]
-    from_db.name = row[1]
-    from_db.grade = row[2]
-    from_db.save
     from_db
   end
 
