@@ -34,6 +34,7 @@ class Student
       INSERT INTO students VALUES (@name, @grade)
     SQL
     DB[:conn].execute(sql)
+    @id = DB[:conn].execute("SELECT * FROM students WHERE name = @name")[0][0]
   end
 
   def self.create
